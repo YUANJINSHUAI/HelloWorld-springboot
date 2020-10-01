@@ -1,3 +1,4 @@
+**highly recommend to use idea.** 
 
 # requirements
 
@@ -17,5 +18,5 @@
 
 2. run DemoApplication
 
-3. open web browser and input http://127.0.0.1:8080/hello/test
+3. open web browser and input http://127.0.0.1:8080/hello/test in chrome
 
