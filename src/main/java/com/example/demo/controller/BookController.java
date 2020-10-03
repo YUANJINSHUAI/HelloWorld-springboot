@@ -5,8 +5,9 @@ import com.example.demo.repositories.BookRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 //@RequestMapping("/hello")
 public class BookController {
 
