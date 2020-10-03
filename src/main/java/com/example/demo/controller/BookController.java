@@ -2,11 +2,11 @@ package com.example.demo.controller;
 
 import com.example.demo.repositories.AuthorRepository;
 import com.example.demo.repositories.BookRepository;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 //@RequestMapping("/hello")
 public class BookController {
 
@@ -20,7 +20,7 @@ public class BookController {
     @RequestMapping("/books")
     public String getBooks(Model model){
         model.addAttribute("books", bookRepository.findAll());
-        return "books";
+        return "books/list";
     }
 
     @RequestMapping("/test")
