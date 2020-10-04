@@ -1,11 +1,11 @@
 package com.example.demo.controller;
 
-import com.example.demo.repositories.AuthorRepository;
 import com.example.demo.repositories.BookRepository;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
 
 @RestController
 //@RequestMapping("/hello")
@@ -25,7 +25,11 @@ public class BookController {
     }
 
     @RequestMapping("/test")
-    public String helloWorldTest(){
-        return "hello world";
+    public HashMap<String, String> helloWorldTest(){
+        HashMap<String, String> map = new HashMap<>();
+        map.put("key", "value");
+        map.put("foo", "hello json");
+        map.put("aa", "bb");
+        return map;
     }
 }
