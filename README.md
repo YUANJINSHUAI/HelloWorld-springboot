@@ -20,3 +20,7 @@
 
 3. open web browser and input http://127.0.0.1:8080/hello/test in chrome
 
+# how to run in linux server
+```shell script
+cd target & java -jar demo-0.0.1-SNAPSHOT.jar
+```
